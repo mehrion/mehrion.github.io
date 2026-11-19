@@ -26,7 +26,8 @@ function walk(dir) {
     });
 }
 
-const pages = () => walk(SITE).filter((f) => f.endsWith('.html'));
+const pages = () => walk(SITE).filter((f) =>
+    f.endsWith('.html') && !read(f).startsWith('google-site-verification: '));
 const urlPath = (file) => '/' + relative(SITE, file).replaceAll('\\', '/');
 
 function render(partialName, pagePath) {
