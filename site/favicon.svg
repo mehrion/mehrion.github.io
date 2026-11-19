@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="mh-sun"><circle cx="375.5" cy="303" r="251.5"/></clipPath>
+    <clipPath id="mh-base"><polygon points="375.5,292.3 189.6,600 561.3,600"/></clipPath>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#111111"/>
+  <g transform="translate(-5.55 1.7) scale(0.1)" fill="#ffffff">
+    <g clip-path="url(#mh-sun)">
+      <polygon points="327.2,212.4 93.1,600 142.1,600 327.2,293.5 512.3,600 561.3,600"/>
+      <polygon points="423.7,212.4 189.6,600 238.6,600 423.7,293.5 608.8,600 657.8,600"/>
+      <g clip-path="url(#mh-base)"><circle cx="375.5" cy="303" r="232.25" fill="none" stroke="#ffffff" stroke-width="38.5"/></g>
+    </g>
+    <circle cx="375.5" cy="303" r="248" fill="none" stroke="#ffffff" stroke-width="7"/>
+  </g>
+</svg>

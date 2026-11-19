@@ -1,0 +1,11 @@
+# Local notes for AI assistants / private docs
+wiki.md
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.log
+
+# Tooling
+node_modules/

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="124 51.5 503 503" role="img" aria-label="mehrion">
+  <defs>
+    <clipPath id="mh-sun"><circle cx="375.5" cy="303" r="251.5"/></clipPath>
+    <clipPath id="mh-base"><polygon points="375.5,292.3 189.6,600 561.3,600"/></clipPath>
+    <mask id="mh-bands" maskUnits="userSpaceOnUse" x="124" y="51.5" width="503" height="503">
+      <g fill="#ffffff">
+        <polygon points="327.2,212.4 93.1,600 142.1,600 327.2,293.5 512.3,600 561.3,600"/>
+        <polygon points="423.7,212.4 189.6,600 238.6,600 423.7,293.5 608.8,600 657.8,600"/>
+        <g clip-path="url(#mh-base)"><circle cx="375.5" cy="303" r="232.25" fill="none" stroke="#ffffff" stroke-width="38.5"/></g>
+      </g>
+    </mask>
+    <g id="mh-guides" fill="none" stroke-width="1.6">
+      <circle cx="375.5" cy="303" r="251.5" stroke-width="3"/>
+      <circle cx="375.5" cy="303" r="213"/>
+      <polygon points="375.5,131 120,555 631,555" stroke-width="3"/>
+      <path d="M120 211.5H631M183.2 140V610M567.8 140V610"/>
+      <path d="M375.5 0V752M0 394.5H752" stroke-dasharray="5 5"/>
+      <path d="M455.5 0L-3.5 760M504.5 0L45.5 760M552 0L93 760M601 0L142 760M150 0L609 760M199 0L658 760M246.5 0L705.5 760M295.5 0L754.5 760"/>
+    </g>
+  </defs>
+  <g clip-path="url(#mh-sun)">
+    <use href="#mh-guides" stroke="#333333"/>
+    <g fill="#333333">
+      <polygon points="327.2,212.4 93.1,600 142.1,600 327.2,293.5 512.3,600 561.3,600"/>
+      <polygon points="423.7,212.4 189.6,600 238.6,600 423.7,293.5 608.8,600 657.8,600"/>
+      <g clip-path="url(#mh-base)"><circle cx="375.5" cy="303" r="232.25" fill="none" stroke="#333333" stroke-width="38.5"/></g>
+    </g>
+    <use href="#mh-guides" stroke="#ffffff" mask="url(#mh-bands)"/>
+  </g>
+</svg>
