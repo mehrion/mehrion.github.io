@@ -8,7 +8,7 @@
     <g clip-path="url(#mh-sun)">
       <polygon points="327.2,212.4 93.1,600 142.1,600 327.2,293.5 512.3,600 561.3,600"/>
       <polygon points="423.7,212.4 189.6,600 238.6,600 423.7,293.5 608.8,600 657.8,600"/>
-      <g clip-path="url(#mh-base)"><circle cx="375.5" cy="303" r="232.25" fill="none" stroke="#ffffff" stroke-width="38.5"/></g>
+      <g clip-path="url(#mh-base)"><circle cx="375.5" cy="303" r="234.47" fill="none" stroke="#ffffff" stroke-width="34.05"/></g>
     </g>
     <circle cx="375.5" cy="303" r="248" fill="none" stroke="#ffffff" stroke-width="7"/>
   </g>
