@@ -9,10 +9,8 @@
         <image:image><image:loc>https://mehrion.github.io/assets/images/apps/calculator/phone-03-percent-sum.webp</image:loc><image:title>Ivory Calculator shop-style percentages: 200 - 10% = 180</image:title></image:image>
         <image:image><image:loc>https://mehrion.github.io/assets/images/apps/calculator/phone-04-settings.webp</image:loc><image:title>Ivory Calculator settings: key sound and read aloud</image:title></image:image>
         <image:image><image:loc>https://mehrion.github.io/assets/images/apps/calculator/phone-05-read-aloud.webp</image:loc><image:title>Ivory Calculator read aloud with a Speak button</image:title></image:image>
-        <image:image><image:loc>https://mehrion.github.io/assets/images/apps/calculator/tablet-7-01-percent-sum.webp</image:loc><image:title>Ivory Calculator on a 7-inch Android tablet</image:title></image:image>
-        <image:image><image:loc>https://mehrion.github.io/assets/images/apps/calculator/tablet-7-02-read-aloud.webp</image:loc><image:title>Ivory Calculator read aloud on a 7-inch Android tablet</image:title></image:image>
-        <image:image><image:loc>https://mehrion.github.io/assets/images/apps/calculator/tablet-10-01-everyday-sum.webp</image:loc><image:title>Ivory Calculator on a 10-inch Android tablet</image:title></image:image>
-        <image:image><image:loc>https://mehrion.github.io/assets/images/apps/calculator/tablet-10-02-percent-explained.webp</image:loc><image:title>Ivory Calculator percent explained on a 10-inch Android tablet</image:title></image:image>
+        <image:image><image:loc>https://mehrion.github.io/assets/images/apps/calculator/tablet-01-percent-sum.webp</image:loc><image:title>Ivory Calculator on an Android tablet</image:title></image:image>
+        <image:image><image:loc>https://mehrion.github.io/assets/images/apps/calculator/tablet-02-read-aloud.webp</image:loc><image:title>Ivory Calculator read aloud on an Android tablet</image:title></image:image>
     </url>
     <url><loc>https://mehrion.github.io/apps.html</loc><lastmod>2026-11-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
     <url><loc>https://mehrion.github.io/about.html</loc><lastmod>2026-11-21</lastmod><changefreq>yearly</changefreq><priority>0.6</priority></url>

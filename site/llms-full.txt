@@ -60,7 +60,7 @@ Features:
 
 Not included, on purpose: scientific functions, brackets, memory keys, unit or currency conversion, graphing, themes, ads, accounts.
 
-Screenshots (all on the app page): five phone pictures, two 7-inch tablet pictures and two 10-inch tablet pictures, plus the app icon, in https://mehrion.github.io/assets/images/apps/calculator/
+Screenshots (all on the app page): five phone pictures and two tablet pictures, plus the app icon, in https://mehrion.github.io/assets/images/apps/calculator/
 
 ## Frequently asked questions
 

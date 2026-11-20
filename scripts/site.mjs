@@ -19,6 +19,9 @@ const REQUIRED_PAGES = [
 ];
 const REQUIRED_FILES = ['robots.txt', 'sitemap.xml', 'llms.txt', 'llms-full.txt', 'favicon.svg', 'favicon.ico', 'apple-touch-icon.png'];
 const NOT_IN_SITEMAP = ['404.html'];
+// Pages that must stay general: they never mention one specific product (add each new product's name).
+const GENERAL_PAGES = ['about.html', 'privacy-policy.html', 'terms-of-service.html', 'delete-account.html', 'child-safety.html'];
+const PRODUCT_NAMES = ['calculator'];
 // The contact address may appear in exactly one place (owner rule).
 const EMAIL = 'arsalan.rex.cloud@gmail.com';
 const EMAIL_PAGE = 'contact.html';
@@ -122,6 +125,24 @@ function check() {
         }
         for (const m of html.matchAll(/content="https:\/\/mehrion\.github\.io(\/assets\/[^"]+)"/g)) {
             if (!existsSync(join(SITE, m[1]))) errors.push(`${p}: social image not found ${m[1]}`);
+        }
+
+        // General pages talk about Ivory as a whole, never about one product.
+        if (GENERAL_PAGES.includes(p.slice(1))) {
+            for (const name of PRODUCT_NAMES) {
+                if (new RegExp(name, 'i').test(html)) errors.push(`${p}: mentions a specific product (${name}); general pages must not`);
+            }
+        }
+
+        // Product page structure (owner rules): phone + tablet gallery, 6 feature boxes, no policies section.
+        if (/^\/[^/]+\/index\.html$/.test(p)) {
+            const galleries = [...html.matchAll(/<h3 class="gallery-title">([^<]+)<\/h3>/g)].map((m) => m[1]);
+            if (galleries.join('|') !== 'On a phone|On a tablet') errors.push(`${p}: gallery must be exactly "On a phone" and "On a tablet" (found: ${galleries.join(', ') || 'none'})`);
+            const features = /What it does\.[\s\S]*?<\/section>/.exec(html)?.[0] ?? '';
+            const boxes = (features.match(/<div class="card">/g) || []).length;
+            if (boxes !== 6) errors.push(`${p}: "What it does." must have exactly 6 boxes (found ${boxes})`);
+            if (/Policies &amp; support/.test(html)) errors.push(`${p}: product pages must not have a "Policies & support." section`);
+            if (/tablet-10|10-inch/.test(html)) errors.push(`${p}: 10-inch tablet pictures are not used`);
         }
 
         // Internal link / asset targets must exist.
