@@ -74,6 +74,17 @@
           "inLanguage": "en-US",
           "fileSize": "1 MB",
           "permissions": "None",
+          "softwareRequirements": "Android 8.0 (API level 26) or newer",
+          "additionalProperty": [
+            { "@type": "PropertyValue", "name": "Package ID", "value": "com.mehrion.calculator" },
+            { "@type": "PropertyValue", "name": "Minimum Android version", "value": "8.0 (API 26)" },
+            { "@type": "PropertyValue", "name": "INTERNET permission", "value": "Not declared in the merged manifest (debug or release)" },
+            { "@type": "PropertyValue", "name": "Arithmetic", "value": "Exact decimal arithmetic (BigDecimal, 40-digit working precision, rounded once); answers up to 15 digits and 12 decimals; evaluated left to right; shop-style percent" },
+            { "@type": "PropertyValue", "name": "Typeface", "value": "Atkinson Hyperlegible Next, bundled, text 18sp minimum, body 22sp, follows system font size up to 200% (display and keypad symbols stop at 1.3x)" },
+            { "@type": "PropertyValue", "name": "Touch targets", "value": "At least 64dp, 16dp gaps, single tap; 22 tappable things on the main screen; 4 x 5 keypad with 72dp keys" },
+            { "@type": "PropertyValue", "name": "Modules", "value": "Kotlin and Jetpack Compose; :apps:calculator shell and :feature:calculator" },
+            { "@type": "PropertyValue", "name": "Testing", "value": "114 JVM unit tests and 59 on-device UI tests; release build about 1.1 MB, cold start about 1 second, about 21 MB memory" }
+          ],
           "isAccessibleForFree": false,
           "offers": { "@type": "Offer", "price": "2.99", "priceCurrency": "USD", "description": "One-time purchase. No subscription, no in-app purchases, no ads." },
           "audience": { "@type": "PeopleAudience", "audienceType": "Seniors, older adults, family members setting up a phone for a parent or grandparent, and anyone who wants a simple, private calculator", "suggestedMinAge": 18 },
@@ -110,14 +121,14 @@
           "@id": "https://mehrion.github.io/calculator/#faq",
           "mainEntity": [
             { "@type": "Question", "name": "What is Ivory Calculator?", "acceptedAnswer": { "@type": "Answer", "text": "Ivory Calculator is a simple calculator app for Android phones and tablets, made by mehrion. It is built for everyday sums such as a bill, the shopping, change or a discount. It works like a desk calculator: it shows the whole sum, calculates from left to right and handles percentages the way a shop till does." } },
-            { "@type": "Question", "name": "Does Ivory Calculator need the internet?", "acceptedAnswer": { "@type": "Answer", "text": "No. The app has no internet permission, so it cannot connect to the internet at all. It works fully offline, including in airplane mode." } },
+            { "@type": "Question", "name": "Does Ivory Calculator need the internet?", "acceptedAnswer": { "@type": "Answer", "text": "No. The app never connects to the internet, so it works fully offline, including in airplane mode." } },
             { "@type": "Question", "name": "Does Ivory Calculator have ads, an account or tracking?", "acceptedAnswer": { "@type": "Answer", "text": "No. There are no ads, no account or sign-in, no analytics and no tracking. The app asks for no permissions and collects no data. Nothing leaves your phone." } },
             { "@type": "Question", "name": "Is Ivory Calculator a good calculator for seniors and older adults?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. It was designed with seniors and older adults in mind, and it is just as easy for everyone else. The keys are large and well spaced, the text is clear and follows your phone's font size setting, the whole sum stays on screen so it can be checked, and an optional Speak button reads the answer aloud. There are only two settings." } },
             { "@type": "Question", "name": "Can I set it up on a parent's or grandparent's phone?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. There are only two settings, key press sound and read aloud, so setting it up for a parent, grandparent or elderly relative takes a moment. Choose them once and it is ready." } },
             { "@type": "Question", "name": "How do percentages work?", "acceptedAnswer": { "@type": "Answer", "text": "They work like a shop calculator: 200 - 10% = 180, 200 + 15% = 230, 200 x 10% = 20 and 200 / 10% = 2,000. The display explains the result, for example '10% of 200 = 20'." } },
             { "@type": "Question", "name": "In what order does it calculate?", "acceptedAnswer": { "@type": "Answer", "text": "From left to right, like a desk calculator, so 2 + 3 x 4 = 20." } },
             { "@type": "Question", "name": "Does it keep a history of my sums?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Past sums keeps the last 20 calculations like a till receipt, and you can tap one to use its answer again. It is kept on your phone only and can be cleared at any time, after a confirmation." } },
-            { "@type": "Question", "name": "How accurate is it?", "acceptedAnswer": { "@type": "Answer", "text": "It uses exact decimal arithmetic, so 0.1 + 0.2 is exactly 0.3. Answers have at most 15 digits and 12 decimals." } },
+            { "@type": "Question", "name": "How accurate is it?", "acceptedAnswer": { "@type": "Answer", "text": "It is exact, so 0.1 + 0.2 is exactly 0.3 and everyday money sums come out right." } },
             { "@type": "Question", "name": "How much does Ivory Calculator cost?", "acceptedAnswer": { "@type": "Answer", "text": "The price is 2.99 US dollars, paid once. There is no subscription, no in-app purchase and no advertising. Local prices and taxes vary by country." } },
             { "@type": "Question", "name": "Which Android versions and devices does it support?", "acceptedAnswer": { "@type": "Answer", "text": "Android 8.0 and newer, on phones and tablets. The download is about 1 MB and the app starts quickly, so it suits older phones too." } },
             { "@type": "Question", "name": "Is Ivory Calculator available yet?", "acceptedAnswer": { "@type": "Answer", "text": "It is being prepared for release on Google Play. This page will link to the store listing as soon as it is live." } }
@@ -170,7 +181,7 @@
                         <a class="btn" href="#screenshots">See screenshots</a>
                         <a class="btn btn-outline" href="#faq">Questions answered</a>
                     </div>
-                    <p class="price-note">$2.99, one-time. No subscription. For Android 8.0 and newer.</p>
+                    <p class="price-note">$2.99, paid once. No subscription. For Android phones and tablets.</p>
                 </div>
             </div>
         </div>
@@ -249,7 +260,7 @@
                 <div class="card"><h3>Past sums</h3><p>The last 20 calculations, like a till receipt. Tap one to use its answer again. Kept on your phone only, and clearable at any time.</p></div>
                 <div class="card"><h3>Copy the result</h3><p>One tap copies the answer so you can paste it into a message. The button turns green and says &ldquo;Copied&rdquo; so you know it worked.</p></div>
                 <div class="card"><h3>Optional read aloud</h3><p>Switch it on and a Speak button reads the answer out loud, for example &ldquo;one thousand six hundred thirty&rdquo;.</p></div>
-                <div class="card"><h3>Exact decimals</h3><p>0.1 + 0.2 is exactly 0.3. It uses exact decimal arithmetic, so everyday money sums come out right.</p></div>
+                <div class="card"><h3>Exact decimals</h3><p>0.1 + 0.2 is exactly 0.3, so everyday money sums always come out right.</p></div>
             </div>
         </div>
     </section>
@@ -257,12 +268,12 @@
     <article class="doc">
         <h2 id="about">About this calculator.</h2>
         <p>Ivory Calculator is a calculator for everyday sums: checking a bill, adding up the shopping, working out change, a discount in a shop, a pension or a monthly budget. It does that one job and nothing else. There are no scientific functions, brackets, memory keys or currency conversion, because every extra button is one more thing to get wrong.</p>
-        <p>It is part of <strong>Ivory</strong>, a family of calm, simple, private Android apps made by <a href="/about.html">mehrion</a>. Like every Ivory app it has no ads, no account, no tracking and no internet permission, and it is built to run well on small, older phones.</p>
+        <p>It is part of <strong>Ivory</strong>, a family of calm, simple, private Android apps made by <a href="/about.html">mehrion</a>. Like every Ivory app it has no ads, no account, no tracking and no internet, and it is built to run well on small, older phones.</p>
 
         <h2 id="who">Who it is for.</h2>
         <p>Ivory Calculator is designed with seniors and older adults in mind, and it is just as easy for everyone else. It also suits family members who set up a phone for a parent or grandparent: there are only two settings, so it is ready in a moment. If you are tired of calculators full of adverts and permissions, it is for you too.</p>
         <ul>
-            <li>Clear type with generous spacing, and text that follows your phone&rsquo;s font size setting.</li>
+            <li>Clear type with generous spacing, and text that follows your phone&rsquo;s text size setting.</li>
             <li>Large, well-spaced keys that keep the same size and place in every state.</li>
             <li>The whole calculator on one screen at normal text size, with no hidden menus.</li>
             <li>A light, calm look with strong contrast.</li>
@@ -280,29 +291,28 @@
                 <tr><td>200 + 15%</td><td>230</td><td>Adding 15% (tax or a tip)</td></tr>
                 <tr><td>200 &times; 10%</td><td>20</td><td>10% of 200</td></tr>
                 <tr><td>200 &divide; 10%</td><td>2,000</td><td>Shop-style percent division</td></tr>
-                <tr><td>0.1 + 0.2</td><td>0.3</td><td>Exact decimal arithmetic</td></tr>
-                <tr><td>1 &divide; 3 &times; 3</td><td>1</td><td>Rounded once, at the end</td></tr>
+                <tr><td>0.1 + 0.2</td><td>0.3</td><td>Exact, with no rounding surprises</td></tr>
+                <tr><td>1 &divide; 3 &times; 3</td><td>1</td><td>Sensible rounding</td></tr>
                 <tr><td>5 &divide; 0</td><td>&ldquo;Can&rsquo;t divide by zero.&rdquo;</td><td>A plain message, and the sum is kept</td></tr>
             </tbody>
         </table>
 
         <h2 id="privacy">Private and offline.</h2>
-        <p>Ivory Calculator has no internet permission, so it cannot send anything anywhere. It asks for no permissions at all: in Android&rsquo;s App info it shows none. It has no ads, no account, no analytics and no advertising ID. Your past sums and two settings are stored on your phone and removed when you uninstall the app. Read the <a href="/privacy-policy.html">Privacy Policy</a> for the details.</p>
+        <p>Ivory Calculator never connects to the internet, so it cannot send anything anywhere. It asks for no permissions at all, and it has no ads, no account and no tracking. Your past sums and two settings stay on your phone and disappear when you uninstall the app. Read the <a href="/privacy-policy.html">Privacy Policy</a> for the details.</p>
 
         <h2 id="details">App details.</h2>
         <table>
             <tbody>
                 <tr><th scope="row">App</th><td>Ivory Calculator</td></tr>
                 <tr><th scope="row">Developer</th><td>mehrion</td></tr>
-                <tr><th scope="row">Platform</th><td>Android 8.0 and newer, phones and tablets</td></tr>
+                <tr><th scope="row">Works on</th><td>Android phones and tablets</td></tr>
                 <tr><th scope="row">Price</th><td>$2.99 USD, one-time purchase</td></tr>
-                <tr><th scope="row">Internet</th><td>Not needed and not permitted: no internet permission</td></tr>
+                <tr><th scope="row">Internet</th><td>Not needed. The app never connects.</td></tr>
                 <tr><th scope="row">Permissions</th><td>None</td></tr>
                 <tr><th scope="row">Ads, account, tracking</th><td>None</td></tr>
                 <tr><th scope="row">Size</th><td>About 1 MB</td></tr>
                 <tr><th scope="row">Language</th><td>English (US)</td></tr>
-                <tr><th scope="row">Category</th><td>Tools: Calculator</td></tr>
-                <tr><th scope="row">Package ID</th><td>com.mehrion.calculator</td></tr>
+                <tr><th scope="row">Category</th><td>Calculator</td></tr>
             </tbody>
         </table>
 
@@ -314,7 +324,7 @@
             </details>
             <details>
                 <summary>Does Ivory Calculator need the internet?</summary>
-                <p>No. The app has no internet permission, so it cannot connect to the internet at all. It works fully offline, including in airplane mode.</p>
+                <p>No. The app never connects to the internet, so it works fully offline, including in airplane mode.</p>
             </details>
             <details>
                 <summary>Does Ivory Calculator have ads, an account or tracking?</summary>
@@ -342,7 +352,7 @@
             </details>
             <details>
                 <summary>How accurate is it?</summary>
-                <p>It uses exact decimal arithmetic, so 0.1 + 0.2 is exactly 0.3. Answers have at most 15 digits and 12 decimals.</p>
+                <p>It is exact, so 0.1 + 0.2 is exactly 0.3 and everyday money sums come out right.</p>
             </details>
             <details>
                 <summary>How much does Ivory Calculator cost?</summary>

@@ -946,6 +946,21 @@ a.card {
     background: var(--surface-muted);
 }
 
+/* Wide tables scroll inside their own box on small screens instead of squeezing */
+.table-wrap {
+    overflow-x: auto;
+    margin-bottom: 22px;
+}
+
+.table-wrap table {
+    min-width: 640px;
+    margin-bottom: 0;
+}
+
+.table-wrap tbody th {
+    white-space: nowrap;
+}
+
 /* ======= FAQ ======= */
 .faq details {
     border-bottom: 1px solid var(--line);

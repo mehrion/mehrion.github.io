@@ -30,6 +30,24 @@ Ivory apps are designed with seniors and older adults in mind. They suit:
 
 Typical searches Ivory answers: calculator for seniors, calculator for older adults, calculator for elderly parents, simple calculator for grandparents, large button calculator, big number calculator, easy to read calculator, offline calculator for Android, calculator with no ads, calculator with no internet, calculator with no account, private calculator with no tracking, calculator that reads the answer aloud (talking calculator), shop percentage calculator, discount calculator, bill calculator, calculator with history like a paper roll, simple Android apps for seniors, ad-free Android apps, Android apps that work without internet.
 
+## How Ivory apps are designed and optimised
+
+Source page: https://mehrion.github.io/about.html#optimised
+
+Typeface: every Ivory app uses Atkinson Hyperlegible Next across the whole suite. Atkinson Hyperlegible, named after the founder of the Braille Institute, was developed specifically to increase legibility for readers with low vision, and to improve comprehension. Its letters and numbers cannot be mistaken for one another (I, l and 1; O and 0; rn and m), including a slashed zero. The font is bundled in each app (no download, no internet), used exactly as designed, and released under the SIL Open Font License. No text is smaller than 18sp, body text is 22sp, only regular and semibold weights are used, text is in sentence case, digits are fixed-width, and text follows the phone's font size setting up to 200%.
+
+How the design responds to age-related change:
+- Eyesight: warm ivory background instead of glaring white, high-contrast text (at least 7:1), readable typeface, no thin weights.
+- Hearing: sounds are low-pitched and clear, with vibration; alarms start quietly and grow louder; nothing plays unexpectedly.
+- Hands (tremor, arthritis, dry fingertips): touch targets of at least 64dp (Android's minimum is 48dp), 16dp gaps, single taps only, actions on finger lift, accidental double presses ignored.
+- Memory: shallow screens (never more than two levels), same layout in every app, plain titles, automatic saving.
+- Processing speed: no time limits, no vanishing messages.
+- Confidence: risky actions ask first with the safe choice on top and can be undone; deleted items kept for 30 days where an app can; price shown before purchase and paid once.
+- Scams and clutter: no ads, no pop-ups, no internet permission, no sign-in.
+- Reading and language: an icon and a word on every button, plain adult language, optional read-aloud using the phone's own speech, text ready for translation and right-to-left languages.
+
+Built the same way every time: one shared design system; one calm light theme (warm ivory and deep navy, no dark mode, gradients or drop shadows); colour always paired with a word and an icon; stable layouts where nothing moves under the finger; every action is a labelled button; designed to work with TalkBack, Switch Access and Voice Access; native Android built with Kotlin and Jetpack Compose targeting Android 8.0 and newer; automated tests on every screen at normal, 1.3x and 2x text size checking fit, contrast, colours, typeface, touch-target size and spacing, plus a check that every release has no internet permission.
+
 ## Ivory Calculator
 
 URL: https://mehrion.github.io/calculator/
@@ -62,7 +80,7 @@ Not included, on purpose: scientific functions, brackets, memory keys, unit or c
 
 Screenshots (all on the app page): five phone pictures and two tablet pictures, plus the app icon, in https://mehrion.github.io/assets/images/apps/calculator/
 
-## Frequently asked questions
+## Ivory Calculator: frequently asked questions
 
 Q: Does Ivory Calculator need the internet?
 A: No. It has no internet permission, so it works fully offline, including in airplane mode.

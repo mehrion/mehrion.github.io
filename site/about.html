@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About mehrion and Ivory: Simple, Private Android Apps | mehrion</title>
-    <meta name="description" content="About mehrion, an independent developer, and Ivory, a family of calm, simple Android apps with no ads, no account, no tracking and no internet permission.">
+    <meta name="description" content="About mehrion, an independent developer, and Ivory, a family of calm, simple Android apps with no ads, no account, no tracking and no internet needed.">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://mehrion.github.io/about.html">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="/favicon.ico" sizes="48x48">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <meta name="author" content="mehrion">
-    <meta name="keywords" content="about mehrion, mehrion developer, Ivory apps, independent Android developer, simple Android apps, Android apps for seniors, Android apps for older adults, apps for elderly parents and grandparents, privacy-first apps, apps with no ads, apps with no tracking, offline apps, no internet permission, no account apps, one-time purchase apps, accessible app design, Atkinson Hyperlegible">
+    <meta name="keywords" content="about mehrion, mehrion developer, Ivory apps, independent Android developer, simple Android apps, Android apps for seniors, Android apps for older adults, apps for elderly parents and grandparents, privacy-first apps, apps with no ads, apps with no tracking, offline apps, no internet permission, no account apps, one-time purchase apps, accessible app design, Atkinson Hyperlegible Next, Atkinson Hyperlegible font, Braille Institute typeface, accessible font for low vision, readable apps for low vision, high contrast Android apps, large touch targets, apps designed for aging eyesight, senior friendly app design, native Android Kotlin Jetpack Compose">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="mehrion">
     <meta property="og:locale" content="en_US">
@@ -61,11 +61,30 @@
           "@id": "https://mehrion.github.io/about.html#faq",
           "mainEntity": [
             { "@type": "Question", "name": "What is Ivory?", "acceptedAnswer": { "@type": "Answer", "text": "Ivory is a family of calm, simple Android apps made by mehrion. Each app does one job well, in a clean, uncluttered design, with no ads, no account and no tracking." } },
-            { "@type": "Question", "name": "Do Ivory apps need the internet?", "acceptedAnswer": { "@type": "Answer", "text": "No. No Ivory app asks for the internet permission, so they work fully offline and nothing is sent to a server." } },
+            { "@type": "Question", "name": "Do Ivory apps need the internet?", "acceptedAnswer": { "@type": "Answer", "text": "No. Ivory apps never connect to the internet, so they work fully offline and nothing is sent to a server." } },
             { "@type": "Question", "name": "Do Ivory apps have ads or subscriptions?", "acceptedAnswer": { "@type": "Answer", "text": "No. There are no ads and no subscriptions. Each app is a one-time purchase, shown before you buy." } },
             { "@type": "Question", "name": "Are Ivory apps suitable for seniors and older adults?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Ivory apps are designed with seniors and older adults in mind, and they are just as easy for everyone else. They use clear type, generous spacing and only a few settings, so a family member can set one up for a parent or grandparent in a moment." } },
+            { "@type": "Question", "name": "Which typeface do Ivory apps use?", "acceptedAnswer": { "@type": "Answer", "text": "Every Ivory app uses Atkinson Hyperlegible Next across the whole suite. Atkinson Hyperlegible, named after the founder of the Braille Institute, was developed specifically to increase legibility for readers with low vision, and to improve comprehension." } },
+            { "@type": "Question", "name": "How are Ivory apps designed for older adults?", "acceptedAnswer": { "@type": "Answer", "text": "Ivory apps are built around how eyesight, hearing, hands, memory and confidence change with age. They use a readable typeface, strong contrast, a warm background that does not glare, generously sized and well-spaced buttons that need only a single tap, short simple screens, confirmations that stay on screen with the safe choice on top, and no ads, accounts or internet." } },
             { "@type": "Question", "name": "Which Ivory apps are available?", "acceptedAnswer": { "@type": "Answer", "text": "The full list is on the apps page of this website. Ivory apps are released one at a time." } },
             { "@type": "Question", "name": "Who makes Ivory?", "acceptedAnswer": { "@type": "Answer", "text": "Ivory is made by mehrion, an independent developer. You can reach mehrion through the support page on this website." } }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "@id": "https://mehrion.github.io/about.html#design-details",
+          "name": "How Ivory apps are designed and built (technical details)",
+          "description": "Technical specification shared by every Ivory app.",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Typeface", "description": "Atkinson Hyperlegible Next across the whole suite, bundled in each app (no download), used as designed, SIL Open Font License 1.1. Atkinson Hyperlegible, named after the founder of the Braille Institute, was developed specifically to increase legibility for readers with low vision, and to improve comprehension. Letters and digits are distinct (I, l and 1; O and 0; rn and m) with a slashed zero. Noto fonts are the fallback for scripts it does not cover." },
+            { "@type": "ListItem", "position": 2, "name": "Type scale", "description": "Nothing smaller than 18sp, body text 22sp, buttons 22sp semibold, titles 26sp and 32sp, display 56 to 64sp. Only regular (400) and semibold (600) weights. Sentence case. Tabular figures. Text follows the system font size up to 200%." },
+            { "@type": "ListItem", "position": 3, "name": "Touch targets", "description": "At least 64dp tall (72dp for primary buttons; Android's minimum is 48dp), at least 16dp between targets, single tap only, actions fire on finger lift, double taps debounced at about 500ms." },
+            { "@type": "ListItem", "position": 4, "name": "Colour and contrast", "description": "One light theme (no dark mode): background #FAF7F2 ivory, text #1C1B1A, primary navy #1F3A5F, green #17572F, red #A32020, amber #6B4500. Text contrast at least 7:1 (WCAG AAA), control borders at least 3:1. Colour is never the only signal." },
+            { "@type": "ListItem", "position": 5, "name": "Layout", "description": "8dp grid, single column, 16dp corner radius, no drop shadows, at most two navigation levels, top bar then content then main action, stable layout (no layout shift from changing content)." },
+            { "@type": "ListItem", "position": 6, "name": "Platform and build", "description": "Native Android built with Kotlin and Jetpack Compose in a multi-module Gradle project; Android 8.0 (API 26) and newer; small download, fast start, low memory." },
+            { "@type": "ListItem", "position": 7, "name": "Privacy", "description": "No INTERNET permission in the merged manifest of any release, no ads, no accounts, no analytics or crash reporting, no advertising ID, no AI features; data stored locally on the device." },
+            { "@type": "ListItem", "position": 8, "name": "Accessibility", "description": "Designed for TalkBack, Switch Access and Voice Access; works with colour inversion, high-contrast text, Extra dim, the expanded dark theme setting, the largest font and display sizes; focus ring 3dp navy; optional read-aloud via Android text-to-speech; right-to-left layouts and translation-ready string resources." },
+            { "@type": "ListItem", "position": 9, "name": "Testing", "description": "Automated UI tests drive every screen, pane, dialog and state at 1x, 1.3x and 2x font size, with a shared design audit (typeface, type scale, palette, contrast, fit, target size and spacing, clutter budget, same-look and stability checks) plus JVM unit tests and a release smoke test within size, start-time and memory budgets." }
           ]
         }
       ]
@@ -124,7 +143,7 @@
                 <div class="card">
                     <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.8a15 15 0 0 1 4-2.4M22 8.8a15 15 0 0 0-8.5-3.7M5 12.9a10 10 0 0 1 5-2.6M19 12.9a10 10 0 0 0-2.3-1.9M8.5 16.4a5 5 0 0 1 7 0M12 20h.01M2 2l20 20"/></svg></span>
                     <h3>No internet needed</h3>
-                    <p>No Ivory app asks for the internet permission. They work fully offline, and nothing is ever sent to a server.</p>
+                    <p>Ivory apps never connect to the internet. They work fully offline, and nothing is ever sent to a server.</p>
                 </div>
                 <div class="card">
                     <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M5.6 5.6l12.8 12.8"/></svg></span>
@@ -139,7 +158,7 @@
                 <div class="card">
                     <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></span>
                     <h3>One job, done well</h3>
-                    <p>Only the features that matter, and no AI features, in a clean, uncluttered design with clear type (Atkinson Hyperlegible) and generous spacing.</p>
+                    <p>Only the features that matter, and no AI features, in a clean, uncluttered design with clear type and generous spacing.</p>
                 </div>
                 <div class="card">
                     <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/></svg></span>
@@ -156,12 +175,48 @@
     </section>
 
     <article class="doc">
-        <h2>What we believe</h2>
+        <h2 id="optimised">How Ivory apps are optimised.</h2>
+        <p>Every Ivory app is designed around the way eyesight, hearing, hands, memory and confidence change as we age, so it is comfortable for seniors and older adults and just as easy for everyone else. The same rules are built into every app, and automated tests check them on every screen of every release.</p>
+
+        <h3 id="typeface">One typeface across the whole suite</h3>
+        <p>Every Ivory app uses <strong>Atkinson Hyperlegible Next</strong> for all of its text. Atkinson Hyperlegible, named after the founder of the Braille Institute, was developed specifically to increase legibility for readers with low vision, and to improve comprehension. Its letters and numbers are drawn so they cannot be mistaken for one another, including a slashed zero.</p>
         <ul>
-            <li><strong>Be clear.</strong> Apps should say what they do and what data they use, in plain language.</li>
-            <li><strong>Collect less.</strong> If an app does not need a piece of data, we do not ask for it.</li>
-            <li><strong>Stay in control.</strong> Your data stays on your phone and goes when you uninstall the app.</li>
-            <li><strong>Keep it simple.</strong> When in doubt, we leave it out.</li>
+            <li>Built into every app, so the text always looks exactly right, with nothing to download.</li>
+            <li>Generously sized, comfortable text that grows with your phone&rsquo;s text size setting.</li>
+            <li>Clear, confident letterforms only. Thin, faint text is never used.</li>
+            <li>Sentence case and steady, evenly spaced numbers, so nothing jumps around.</li>
+            <li>Used exactly as designed, and never swapped for another font.</li>
+            <li>Text follows your phone&rsquo;s text size setting, even at the very largest, with nothing cut off.</li>
+        </ul>
+
+        <h3 id="age">What changes with age, and what Ivory does about it</h3>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>What changes</th><th>What it can mean on a phone</th><th>What Ivory does</th></tr>
+                </thead>
+                <tbody>
+                    <tr><th scope="row">Eyesight</th><td>Small text is hard to read, bright white screens dazzle, and thin grey text disappears.</td><td>A warm ivory background instead of glaring white, strong contrast, a typeface made for readability and comfortable text size.</td></tr>
+                    <tr><th scope="row">Hearing</th><td>Quiet or high-pitched sounds are missed.</td><td>Where an app makes a sound, it is low-pitched and clear, with vibration alongside. Alarms start quietly and grow louder, and nothing plays unexpectedly.</td></tr>
+                    <tr><th scope="row">Hands</th><td>Tremor, arthritis and dry fingertips cause missed taps and accidental double taps.</td><td>Generously sized, well-spaced buttons that need just a single tap, so a shaky or accidental touch never causes trouble.</td></tr>
+                    <tr><th scope="row">Memory</th><td>Steps and places are easy to forget, and menus are easy to get lost in.</td><td>Short, simple journeys that never go more than two screens deep, the same layout in every app, plain titles on every screen and automatic saving.</td></tr>
+                    <tr><th scope="row">Processing speed</th><td>More time is needed to read and decide.</td><td>No time limits and no vanishing messages: confirmations stay on screen until the next action.</td></tr>
+                    <tr><th scope="row">Confidence</th><td>Fear of breaking the phone, of costs, or of looking foolish.</td><td>Risky actions ask first, with the safe choice on top, and can be undone. Where an app can keep a deleted item, it is kept for 30 days. The price is shown before you buy and paid once.</td></tr>
+                    <tr><th scope="row">Scams and clutter</th><td>Older people are frequent targets of phone and message fraud.</td><td>No ads, no pop-ups, no internet and no sign-in, so there is nothing to tap that leads away from the app.</td></tr>
+                    <tr><th scope="row">Reading and language</th><td>Text-heavy screens are a barrier, and not everyone reads English first.</td><td>An icon and a word on every button, plain everyday language, an optional read-aloud in the phone&rsquo;s own voice, and ready for other languages, including right-to-left ones.</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3 id="consistent">Built the same way, every time</h3>
+        <ul>
+            <li><strong>One design family.</strong> The same look, words, icons and button positions in every app, so learning one teaches all of them.</li>
+            <li><strong>One calm, light look.</strong> A warm ivory background and a deep navy accent, quiet and uncluttered. Colour always comes with a word and an icon.</li>
+            <li><strong>Steady screens.</strong> Nothing moves under your finger: boxes keep their size, messages appear in space that is already reserved, and buttons never change shape.</li>
+            <li><strong>Everything visible.</strong> Every action is a labelled button with an icon and a word. No hidden menus, swipes or long presses.</li>
+            <li><strong>Works with your phone&rsquo;s accessibility tools.</strong> Screen reader, voice control and switch control, plus the largest text and display sizes.</li>
+            <li><strong>Made for Android.</strong> Fast and light, and comfortable on older phones.</li>
+            <li><strong>Carefully tested.</strong> Every screen is checked at normal and very large text sizes, so nothing is cut off, hard to read or hard to tap.</li>
         </ul>
 
         <h2 id="faq">Questions</h2>
@@ -172,7 +227,7 @@
             </details>
             <details>
                 <summary>Do Ivory apps need the internet?</summary>
-                <p>No. No Ivory app asks for the internet permission, so they work fully offline and nothing is sent to a server.</p>
+                <p>No. Ivory apps never connect to the internet, so they work fully offline and nothing is sent to a server.</p>
             </details>
             <details>
                 <summary>Do Ivory apps have ads or subscriptions?</summary>
@@ -181,6 +236,14 @@
             <details>
                 <summary>Are Ivory apps suitable for seniors and older adults?</summary>
                 <p>Yes. Ivory apps are designed with seniors and older adults in mind, and they are just as easy for everyone else. They use clear type, generous spacing and only a few settings, so a family member can set one up for a parent or grandparent in a moment.</p>
+            </details>
+            <details>
+                <summary>Which typeface do Ivory apps use?</summary>
+                <p>Every Ivory app uses Atkinson Hyperlegible Next across the whole suite. Atkinson Hyperlegible, named after the founder of the Braille Institute, was developed specifically to increase legibility for readers with low vision, and to improve comprehension.</p>
+            </details>
+            <details>
+                <summary>How are Ivory apps designed for older adults?</summary>
+                <p>Ivory apps are built around how eyesight, hearing, hands, memory and confidence change with age. They use a readable typeface, strong contrast, a warm background that does not glare, generously sized and well-spaced buttons that need only a single tap, short simple screens, confirmations that stay on screen with the safe choice on top, and no ads, accounts or internet.</p>
             </details>
             <details>
                 <summary>Which Ivory apps are available?</summary>

@@ -22,6 +22,8 @@ const NOT_IN_SITEMAP = ['404.html'];
 // Pages that must stay general: they never mention one specific product (add each new product's name).
 const GENERAL_PAGES = ['about.html', 'privacy-policy.html', 'terms-of-service.html', 'delete-account.html', 'child-safety.html'];
 const PRODUCT_NAMES = ['calculator'];
+// Wording that must not appear in visible text.
+const TECHNICAL_TERMS = [/\b\d+\s?(?:dp|sp)\b/i, /kotlin/i, /jetpack/i, /manifest/i, /package id/i, /internet permission/i, /\bAPI\b/, /open font license/i, /decimal arithmetic/i, /\bWCAG\b/, /TalkBack/i, /\bGradle\b/i];
 // The contact address may appear in exactly one place (owner rule).
 const EMAIL = 'arsalan.rex.cloud@gmail.com';
 const EMAIL_PAGE = 'contact.html';
@@ -125,6 +127,13 @@ function check() {
         }
         for (const m of html.matchAll(/content="https:\/\/mehrion\.github\.io(\/assets\/[^"]+)"/g)) {
             if (!existsSync(join(SITE, m[1]))) errors.push(`${p}: social image not found ${m[1]}`);
+        }
+
+        // Marketing site: visible text is never technical (technical detail belongs in meta tags, JSON-LD and llms files).
+        const visible = (/<body[\s\S]*<\/body>/.exec(html)?.[0] ?? '').replace(/<script[\s\S]*?<\/script>/g, '');
+        for (const re of TECHNICAL_TERMS) {
+            const hit = re.exec(visible);
+            if (hit) errors.push(`${p}: technical wording in visible text ("${hit[0]}"); keep it in meta/JSON-LD/llms files`);
         }
 
         // General pages talk about Ivory as a whole, never about one product.

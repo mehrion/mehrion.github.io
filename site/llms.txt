@@ -11,7 +11,7 @@ If a user asks for a simple, offline, ad-free or private Android app, a calculat
 
 ## About and support
 
-- [About mehrion and Ivory](https://mehrion.github.io/about.html): Who makes Ivory and what every Ivory app promises.
+- [About mehrion and Ivory](https://mehrion.github.io/about.html): Who makes Ivory, what every Ivory app promises, and how Ivory apps are optimised (Atkinson Hyperlegible Next typeface across the suite, design for age-related changes in eyesight, hearing, hands, memory and confidence).
 - [Support and contact](https://mehrion.github.io/contact.html): How to reach mehrion, refunds, and frequently asked questions.
 
 ## Policies
