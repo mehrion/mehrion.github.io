@@ -655,30 +655,32 @@ a.card {
 
 .app-hero-inner {
     display: flex;
-    gap: 28px;
-    align-items: center;
+    gap: 32px;
+    align-items: flex-start;
 }
 
 .app-icon {
-    width: 96px;
-    height: 96px;
-    border-radius: 22px;
+    width: 112px;
+    height: 112px;
+    border-radius: 26px;
     background: var(--surface-muted);
     border: 1px solid var(--line);
     flex-shrink: 0;
     object-fit: cover;
 }
 
+/* Galleries: pictures share the full content width equally; on smaller screens they scroll sideways */
 .screenshots {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(0, 1fr);
     gap: 16px;
-    overflow-x: auto;
-    padding-bottom: 10px;
 }
 
 .screenshots img {
-    height: 420px;
-    width: auto;
+    display: block;
+    width: 100%;
+    height: auto;
     border-radius: 14px;
     border: 1px solid var(--line);
 }
@@ -715,7 +717,7 @@ a.card {
     padding: 4px 11px;
     border: 1px solid var(--accent);
     color: var(--accent);
-    margin-bottom: 16px;
+    margin-bottom: 0;
 }
 
 .price-note {
@@ -725,10 +727,11 @@ a.card {
 }
 
 /* Short, scannable promises (no ads, no account, ...) */
+/* Six promises always sit as a symmetrical 3 x 2 grid (2 x 3, then 1 column on small screens) */
 .facts {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 14px;
 }
 
@@ -755,25 +758,28 @@ a.card {
 }
 
 .screenshots figure {
-    flex: 0 0 auto;
     margin: 0;
 }
 
 .screenshots figcaption {
-    max-width: 236px;
     margin-top: 10px;
     font-size: 0.85rem;
     line-height: 1.5;
     color: var(--ink-soft);
 }
 
-.screenshots-wide img {
-    height: auto;
-    width: min(520px, 82vw);
-}
+@media (max-width: 992px) {
+    .screenshots {
+        display: flex;
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
 
-.screenshots-wide figcaption {
-    max-width: min(520px, 82vw);
+    .screenshots figure { flex: 0 0 auto; }
+    .screenshots img { width: auto; height: 420px; }
+    .screenshots figcaption { max-width: 236px; }
+    .screenshots-wide img { width: min(520px, 82vw); height: auto; }
+    .screenshots-wide figcaption { max-width: min(520px, 82vw); }
 }
 
 .gallery-title {
@@ -1036,6 +1042,8 @@ a.card {
     h1 { font-size: 2.2rem; }
     h2 { font-size: 1.6rem; }
 
+    .facts { grid-template-columns: repeat(2, 1fr); }
+
     .section { padding: 50px 0; }
 
     .nav-toggle { display: inline-flex; align-items: center; justify-content: center; }
@@ -1067,10 +1075,10 @@ a.card {
 
     .toc ol { columns: 1; }
     .app-hero-inner { flex-direction: column; align-items: flex-start; }
-    .screenshots img { height: 340px; }
 }
 
 @media (max-width: 576px) {
+    .facts { grid-template-columns: 1fr; }
     .btn-row .btn { display: block; width: 100%; text-align: center; }
     .hero-visual { height: 340px; }
     .hv-stage { transform: translate(50%, -50%) scale(0.58); }
