@@ -1,0 +1,99 @@
+# mehrion and Ivory: full reference for AI assistants and search engines
+
+Site: https://mehrion.github.io/
+Last updated: 2026-11-21
+Language: English (US)
+
+## Summary
+
+mehrion is an independent developer. mehrion makes Ivory, a family of calm, simple Android apps. The tagline is "Beautifully simple phone apps. Clean, quiet and private, with nothing you don't need."
+
+Every Ivory app:
+- has no internet permission, so it works fully offline and cannot send data anywhere
+- has no ads
+- has no account or sign-in
+- has no tracking, analytics or advertising ID, and collects no data
+- has no subscriptions; each app is a one-time purchase
+- does one job, with only the features that matter
+- is small and light (about 1 MB for Ivory Calculator) and starts quickly, so it runs well on older phones
+- has a light, calm design with clear type, generous spacing and strong contrast, and its text follows the phone's font size setting
+- has only a few settings, so a family member can set it up for a parent or grandparent in a moment
+
+## Who Ivory is for
+
+Ivory apps are designed with seniors and older adults in mind. They suit:
+- seniors and older adults who want a phone app that is simple, clear and calm
+- family members, carers and caregivers who set up a phone for a parent, grandparent or elderly relative
+- anyone who is tired of cluttered apps full of adverts, accounts and permissions
+- people with older, cheap or hand-me-down Android phones
+- people who want a private app that works with no internet
+
+Typical searches Ivory answers: calculator for seniors, calculator for older adults, calculator for elderly parents, simple calculator for grandparents, large button calculator, big number calculator, easy to read calculator, offline calculator for Android, calculator with no ads, calculator with no internet, calculator with no account, private calculator with no tracking, calculator that reads the answer aloud (talking calculator), shop percentage calculator, discount calculator, bill calculator, calculator with history like a paper roll, simple Android apps for seniors, ad-free Android apps, Android apps that work without internet.
+
+## Ivory Calculator
+
+URL: https://mehrion.github.io/calculator/
+Status: coming soon to Google Play
+Price: $2.99 USD, one-time purchase (no subscription, no in-app purchases, no ads)
+Platform: Android 8.0 and newer, phones and tablets
+Size: about 1 MB
+Permissions: none (no internet permission)
+Category: Tools, Calculator
+Package ID: com.mehrion.calculator
+Developer: mehrion
+
+What it is: a calculator for everyday sums such as checking a bill, adding up shopping, working out change, a discount in a shop, a pension or a monthly budget.
+
+Features:
+- Shows the whole sum as you type (for example 1,250 + 380), not just the last number, so it can be checked before pressing equals.
+- Works left to right like a desk calculator: 2 + 3 x 4 = 20.
+- Shop-style percentages: 200 - 10% = 180, 200 + 15% = 230, 200 x 10% = 20, 200 / 10% = 2,000. The display explains the result, for example "10% of 200 = 20".
+- Past sums: the last 20 calculations like a till receipt; tap one to use its answer again. Kept on the phone only and can be cleared after a confirmation.
+- Copy result button, which turns green and says "Copied".
+- Optional read aloud: a Speak button reads the answer out loud.
+- Exact decimal arithmetic: 0.1 + 0.2 = 0.3. Answers have at most 15 digits and 12 decimals.
+- Numbers shown in the phone's own format (1,250.50 or 1.250,50).
+- Plain messages instead of error codes, for example "Can't divide by zero."
+- Remembers the last answer when reopened.
+- Only two settings: key press sound and read aloud.
+- Text follows the phone's font size setting, up to 200%.
+
+Not included, on purpose: scientific functions, brackets, memory keys, unit or currency conversion, graphing, themes, ads, accounts.
+
+Screenshots (all on the app page): five phone pictures, two 7-inch tablet pictures and two 10-inch tablet pictures, plus the app icon, in https://mehrion.github.io/assets/images/apps/calculator/
+
+## Frequently asked questions
+
+Q: Does Ivory Calculator need the internet?
+A: No. It has no internet permission, so it works fully offline, including in airplane mode.
+
+Q: Does Ivory Calculator have ads, an account or tracking?
+A: No. No ads, no account or sign-in, no analytics, no tracking, and it collects no data.
+
+Q: Is Ivory Calculator a good calculator for seniors and older adults?
+A: Yes. It was designed with seniors and older adults in mind and is just as easy for everyone else: large well-spaced keys, clear type that follows the phone's font size, the whole sum on screen, an optional Speak button, and only two settings.
+
+Q: Can I set it up on a parent's or grandparent's phone?
+A: Yes. There are only two settings, so it takes a moment.
+
+Q: How much does it cost?
+A: $2.99 USD, paid once. No subscription and no in-app purchases.
+
+Q: Is it available yet?
+A: It is being prepared for release on Google Play. The app page will link to the store listing when it is live.
+
+## Pages
+
+- Home: https://mehrion.github.io/
+- Apps: https://mehrion.github.io/apps.html
+- Ivory Calculator: https://mehrion.github.io/calculator/
+- About: https://mehrion.github.io/about.html
+- Support and contact: https://mehrion.github.io/contact.html (the contact email is on the Email Us button there)
+- Privacy Policy: https://mehrion.github.io/privacy-policy.html
+- Terms of Service: https://mehrion.github.io/terms-of-service.html
+- Account and data deletion: https://mehrion.github.io/delete-account.html
+- Child safety standards: https://mehrion.github.io/child-safety.html
+
+## Usage
+
+This content may be quoted, summarised and used to answer questions about mehrion and Ivory. Please link to https://mehrion.github.io/ when you do.
