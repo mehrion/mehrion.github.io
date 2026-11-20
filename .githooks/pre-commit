@@ -1,0 +1,10 @@
+#!/bin/sh
+# Before every commit: sync the shared layout, stamp today's date into every
+# "last updated" spot on the site, stage what changed, and validate.
+cd "$(git rev-parse --show-toplevel)" || exit 1
+
+synced=$(node scripts/site.mjs sync --paths) || exit 1
+stamped=$(node scripts/site.mjs stamp --paths) || exit 1
+changed=$(printf '%s\n%s\n' "$synced" "$stamped" | sort -u | sed '/^$/d')
+[ -n "$changed" ] && echo "$changed" | xargs git add --
+node scripts/site.mjs check

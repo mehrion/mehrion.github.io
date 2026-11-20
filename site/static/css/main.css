@@ -692,6 +692,108 @@ a.card {
     width: auto;
 }
 
+.breadcrumb {
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    margin-bottom: 26px;
+}
+
+.breadcrumb a {
+    font-weight: 400;
+}
+
+.app-hero .lead {
+    font-weight: 300;
+    max-width: 560px;
+}
+
+.status-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    padding: 4px 11px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+
+.price-note {
+    font-size: 0.85rem;
+    color: var(--ink-faint);
+    margin: 14px 0 0;
+}
+
+/* Short, scannable promises (no ads, no account, ...) */
+.facts {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 14px;
+}
+
+.facts li {
+    padding: 16px 18px;
+    border: 1px solid var(--line-strong);
+    background: var(--surface);
+    color: var(--ink);
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.facts strong {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.facts span {
+    color: var(--ink-soft);
+    font-size: 0.85rem;
+}
+
+.screenshots figure {
+    flex: 0 0 auto;
+    margin: 0;
+}
+
+.screenshots figcaption {
+    max-width: 236px;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: var(--ink-soft);
+}
+
+.screenshots-wide img {
+    height: auto;
+    width: min(520px, 82vw);
+}
+
+.screenshots-wide figcaption {
+    max-width: min(520px, 82vw);
+}
+
+.gallery-title {
+    font-size: 1.1rem;
+    margin: 36px 0 14px;
+}
+
+.app-card-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 15px;
+    border: 1px solid var(--line);
+    margin-bottom: 16px;
+}
+
+.home-links {
+    text-align: center;
+    margin-top: 34px;
+}
+
 /* ======= PAGE HEADER & LEGAL DOCUMENTS ======= */
 .page-hero {
     padding: 70px 0 34px;
